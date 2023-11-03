@@ -99,7 +99,7 @@ ol li {
   text-align: left;
   font-size: 20px;
   font-weight: 500;
-  min-height: 5px;
+  min-height: 5cdpx;
   align-items: center;
   display: flex;
   color: blueviolet;
@@ -131,7 +131,7 @@ ol li {
 
 
 .todo_style .fa-times:hover {
-  background-color: crimson;
+  background-color: red;
 }
 
 .todo_style .fa-times:hover .list_style {
