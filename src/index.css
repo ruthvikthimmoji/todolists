@@ -1,13 +1,162 @@
 body {
-  margin: 0;
+  margin: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+    background-color: blueviolet;
+    /* outline: 20px solid burlywood; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 code {
+  box-sizing: border-box;
+  /* border-style: groove; */
+  padding: 0;
+  margin: 0;
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.main_div {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  background-color: blueviolet;
+  align-items: center;
+  text-align: center;
+}
+
+.centre_div {
+  width: 25%;
+  height: 75vh;
+  background-color: azure;
+  box-shadow: 5px 5px 25px -5px rgb(0,0,0,0.5);
+  text-align: center;
+  text-emphasis-color: black;
+  border-radius: 5%;
+  /* opacity: 85%; */
+ /* opacity: blur(15px); */
+
+
+}
+
+h1 {
+  color: aliceblue;
+  background: transparent;
+  background-color: blueviolet;
+  padding: 12px 0 12px 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 15px -5px rgb(0,0,0,0.3);
+  /* border-radius: 2%; */
+
+}
+input {
+  text-align: center;
+  color: black;
+  border: none;
+  height: 30px;
+  top: 10px;
+  background: transparent;
+  font-size: 15px;
+  font-weight: 200;
+  width: 80px;
+  border-bottom: 2px solid brown;
+  outline: 5px;
+} 
+
+button {
+  min-height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: blueviolet;
+  color: aliceblue;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  box-shadow: 5px 5px 15px -5px rgb(0,0,0,0.3);
+}
+
+button:hover {
+  background-color: aquamarine;
+  color: black;
+}
+
+ol {
+  margin: 30px;
+  /* margin-top: 50px; */
+}
+
+ol li {
+  margin: 10px;
+  padding-left: 0px;
+  padding: 3px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  min-height: 5px;
+  align-items: center;
+  display: flex;
+  color: blueviolet;
+  text-transform: capitalize;
+}
+
+
+.todo_style {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.todo_style .fa-times {
+  width: 20px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 50%;
+  margin: 0 15px 0 35px;
+  color: aliceblue;
+  box-shadow: 5px 5px 15px -5px rgb(0,0,0,0.3) ;
+
+}
+
+
+.todo_style .fa-times:hover {
+  background-color: crimson;
+}
+
+.todo_style .fa-times:hover .list_style {
+  color: crimson;
+}
+
+@media(max-width:768px) {
+  .centre_div{
+    width: 55%;
+  }
+}
+
+.todo_style .fa-times{
+  margin: 0 15px 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  margin: 5px;
+  margin-left: 20px;
+  min-height: 40px;
+  width: 40px;
+  font-size: 30px;
+  color: white;
+}
+
